@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbox" prefHeight="300.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pingchecker.application.Controller">
+   <children>
+      <AnchorPane fx:id="anchorpane" prefHeight="475" prefWidth="300">
+         <children>
+            <CheckBox fx:id="euCheckBox" layoutX="34.0" layoutY="49.0" mnemonicParsing="false" onAction="#checkEuw" prefHeight="31.0" prefWidth="101.0" text="EUW">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="euneCheckBox" layoutX="34.0" layoutY="129.0" mnemonicParsing="false" onAction="#checkEune" prefHeight="31.0" prefWidth="101.0" text="EUNE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="naCheckBox" layoutX="34.0" layoutY="89.0" mnemonicParsing="false" onAction="#checkNa" prefHeight="31.0" prefWidth="101.0" text="NA">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="oceCheckBox" layoutX="34.0" layoutY="168.0" mnemonicParsing="false" onAction="#checkOce" prefHeight="31.0" prefWidth="101.0" text="OCE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="lanCheckBox" layoutX="34.0" layoutY="209.0" mnemonicParsing="false" onAction="#checkLan" prefHeight="31.0" prefWidth="101.0" text="LAN">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="pingLabel" layoutX="250.0" layoutY="108.0" prefHeight="74.0" prefWidth="226.0">
+               <font>
+                  <Font size="51.0" />
+               </font>
+            </Label>
+            <Button fx:id="startButton" layoutX="30.0" layoutY="270.0" mnemonicParsing="false" onAction="#handleStartButtonClick" prefHeight="31.0" prefWidth="50.0" text="Start" />
+            <Button fx:id="stopButton" layoutX="90.0" layoutY="270.0" mnemonicParsing="false" onAction="#handleStopButtonClick" prefHeight="31.0" prefWidth="50.0" text="Stop" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
