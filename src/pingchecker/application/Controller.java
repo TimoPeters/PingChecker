@@ -35,8 +35,10 @@ public class Controller {
 
 
     public void handleStartButtonClick() {
-        constantlyUpdateLabel();
-        keepChecking = true;
+        if (!keepChecking) {
+            constantlyUpdateLabel();
+            keepChecking = true;
+        }
     }
 
     public void handleStopButtonClick() {
